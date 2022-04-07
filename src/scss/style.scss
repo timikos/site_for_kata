@@ -1,29 +1,7 @@
 @import "main";
+@import "fonts";
 
 $bgColor: #24292e;
 $text: #fff;
 
 
-body {
-  padding: 1rem;
-  margin: 0;
-  font-family: Comic, sans-serif;
-  background-color: $bgColor;
-  color: $text;
-}
-
-.container {
-  width: 600px;
-  height: 300px;
-  background: red;
-}
-
-.swiper {
-  width: 600px;
-  height: 300px;
-}
-
-.test{
-  width: 50px;
-  height: 50px;
-}
