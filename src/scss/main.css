@@ -75,12 +75,19 @@ body {
 @media (min-width: 320px) {
   .elements__menu{
     overflow: hidden;
+  }
+}
+
+
+
+@media (min-width: 768px) {
+  .elements__menu{
 
   }
 }
 
 @media (min-width: 768px) {
-  .elements__menu{
+  .swiper-wrapper{
     flex-wrap: wrap;
   }
 }
