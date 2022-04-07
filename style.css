@@ -71,7 +71,7 @@ body {
   }
 }
 @media (min-width: 768px) {
-  .elements__menu {
+  .swiper-wrapper {
     flex-wrap: wrap;
   }
 }
