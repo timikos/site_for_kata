@@ -1,4 +1,4 @@
-let showAll = document.querySelector(".show-all__menu");
+let showAll = document.querySelector(".menu__show-all");
 let textShowAll = document.querySelector(".text__show-all");
 
 let elem1 =document.querySelector(".elem__menu1");
@@ -16,7 +16,6 @@ let elem11 =document.querySelector(".elem__menu11");
 
 let statusMenuOpened = true;
 showAll.addEventListener("click", function (){
-
     if (statusMenuOpened) {
         elem9.style.display = "block";
         elem10.style.display = "block";

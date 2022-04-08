@@ -1,7 +1,8 @@
 import './scss/style.scss';
 import './js/swiper.js';
-import './js/main.js';
+import './js/button-show-all.js';
 
+// Images
 import './img/lenovo.svg';
 import "./img/samsung.svg";
 import "./img/apple.svg";

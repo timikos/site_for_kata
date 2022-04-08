@@ -1,7 +1,6 @@
-import Swiper from 'swiper';
+import Swiper, {Pagination} from 'swiper';
 
 const slider = document.querySelector(".elements__menu");
-
 let mySwiper;
 
 function mobileSlider() {
@@ -10,12 +9,12 @@ function mobileSlider() {
       slidesPerView:1,
       loop: true,
       slideClass: "swiper-slide",
+      modules: [Pagination],
       pagination: {
         el: ".swiper-pagination",
         type: "bullets",
       },
     });
-
     slider.dataset.mobile = "true";
   }
   if (window.innerWidth >= 768) {
