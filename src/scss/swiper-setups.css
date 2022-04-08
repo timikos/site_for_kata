@@ -5,9 +5,19 @@
 }
 
 .swiper-pagination{
+  margin: 0 0 -16px 0;
+}
 
+@media (min-width: 768px) {
+  .swiper-pagination{
+    display: none;
+  }
 }
 
 .swiper-pagination-bullet {
+
   background: #B5B6BC;
+  margin-left: 16px;
+  width: 12px;
+  height: 12px;
 }
