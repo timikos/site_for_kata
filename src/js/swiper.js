@@ -1,6 +1,6 @@
 import Swiper, {Pagination} from 'swiper';
 
-const slider = document.querySelector(".elements__menu");
+const slider = document.querySelector(".brands-menu__brands");
 let mySwiper;
 
 function mobileSlider() {

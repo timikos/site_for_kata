@@ -1,0 +1,152 @@
+.header__inner {
+  min-height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__name {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+  @media (min-width: $screen-lg) {
+    top: 25px;
+    position: absolute;
+    padding: 10px;
+  }
+}
+
+.header__first_points, .header__second-points {
+  display: flex;
+  align-items: center;
+}
+
+.header__second-points {
+  overflow: scroll;
+  width: 120px;
+
+  @media (min-width: $screen-md) {
+    overflow: auto;
+    width: 100%;
+    justify-content: flex-end;
+  }
+}
+
+.header__first_points{
+  .header__divider {
+    display: none;
+
+    @media (min-width: $screen-md) {
+      display: block;
+    }
+
+    @media (min-width: $screen-lg) {
+      display: none;
+    }
+  }
+}
+
+.header__elem1 {
+  @media (min-width: $screen-lg) {
+    display: none;
+  }
+}
+
+.header__elem1, .header__elem2, .header__elem3,
+.header__elem4, .header__elem5, .header__elem7,
+.header__elem8, .header__divider{
+  margin-left: 16px;
+}
+
+.header__elem2, .header__divider {
+  @media (min-width: $screen-lg) {
+    display: none;
+  }
+}
+
+.header__elem3{
+  @media (min-width: $screen-md) {
+    display: block;
+    margin-left: 16px;
+  }
+
+  @media (min-width: $screen-lg) {
+    display: none;
+  }
+}
+
+.header__elem4 {
+  @media (min-width: $screen-md) {
+    display: block;
+    margin-left: 16px;
+  }
+
+  @media (min-width: $screen-lg) {
+    display: none;
+  }
+}
+
+.header__elem5 {
+  @media (min-width: $screen-md) {
+    display: block;
+    margin-left: 16px;
+  }
+
+  @media (min-width: $screen-lg) {
+    display: none;
+  }
+}
+
+.header__elem7, .header__elem8 {
+  @media (min-width: 768px) {
+    margin-left: 16px;
+  }
+
+  @media (min-width: $screen-lg) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 32px;
+  }
+
+  p {
+    display: none;
+
+    @media (min-width: $screen-lg) {
+      display: block;
+      letter-spacing: -0.2px;
+      padding-right: 8px;
+    }
+  }
+}
+
+.info__p2 {
+  display: none;
+
+  @media (min-width: $screen-md) {
+    display: block;
+  }
+
+  @media (min-width: $screen-lg) {
+    display: none;
+  }
+}
+
+.info__p3 {
+  display: none;
+
+  @media (min-width: $screen-lg) {
+    display: block;
+  }
+}
+
+.header__nleft {
+  position: absolute;
+  left: 0;
+  z-index: 0;
+}
+
+.header__text {
+  font-size: 14px;
+}
