@@ -1,11 +1,15 @@
 import Swiper, {Pagination} from 'swiper';
 
-const slider = document.querySelector(".brands-menu__brands");
-let mySwiper;
+const sliderBrands = document.querySelector(".brands-menu__brands");
+const sliderViewTech = document.querySelector(".view-tech-menu__cases");
+const sliderPrice = document.querySelector(".price-menu__cases");
+let mySwiper1;
+let mySwiper2;
+let mySwiper3;
 
-function mobileSlider() {
-  if (window.innerWidth < 768 && slider.dataset.mobile == "false"){
-    mySwiper = new Swiper(slider, {
+function mobileSliderBrands() {
+  if (window.innerWidth < 768 && sliderBrands.dataset.mobile === "false"){
+    mySwiper1 = new Swiper(sliderBrands, {
       slidesPerView:1,
       loop: true,
       slideClass: "swiper-slide",
@@ -15,19 +19,71 @@ function mobileSlider() {
         type: "bullets",
       },
     });
-    slider.dataset.mobile = "true";
+    sliderBrands.dataset.mobile = "true";
   }
   if (window.innerWidth >= 768) {
-    slider.dataset.mobile = "false";
+    sliderBrands.dataset.mobile = "false";
 
-    if (slider.classList.contains("swiper-initialized")) {
-      mySwiper.destroy();
+    if (sliderBrands.classList.contains("swiper-initialized")) {
+      mySwiper1.destroy();
     }
   }
-};
+}
 
-mobileSlider();
+function mobileSliderViewTech() {
+  if (window.innerWidth < 768 && sliderViewTech.dataset.mobile === "false"){
+    mySwiper2 = new Swiper(sliderViewTech, {
+      slidesPerView:1,
+      loop: true,
+      slideClass: "swiper-slide",
+      modules: [Pagination],
+      pagination: {
+        el: ".swiper-pagination",
+        type: "bullets",
+      },
+    });
+    sliderViewTech.dataset.mobile = "true";
+  }
+  if (window.innerWidth >= 768) {
+    sliderViewTech.dataset.mobile = "false";
+
+    if (sliderViewTech.classList.contains("swiper-initialized")) {
+      mySwiper2.destroy();
+    }
+  }
+}
+
+function mobileSliderPrice() {
+  if (window.innerWidth < 768 && sliderPrice.dataset.mobile === "false"){
+    mySwiper3 = new Swiper(sliderPrice, {
+      slidesPerView:1,
+      loop: true,
+      slideClass: "swiper-slide",
+      modules: [Pagination],
+      pagination: {
+        el: ".swiper-pagination",
+        type: "bullets",
+      },
+    });
+    sliderPrice.dataset.mobile = "true";
+  }
+  if (window.innerWidth >= 768) {
+    sliderPrice.dataset.mobile = "false";
+
+    if (sliderPrice.classList.contains("swiper-initialized")) {
+      mySwiper3.destroy();
+    }
+  }
+}
+
+
+mobileSliderBrands();
+mobileSliderViewTech();
+mobileSliderPrice();
 
 window.addEventListener("resize", () => {
-  mobileSlider();
+  mobileSliderBrands();
+  mobileSliderViewTech();
+  mobileSliderPrice();
+
 });

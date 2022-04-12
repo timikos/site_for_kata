@@ -1,33 +1,43 @@
-let showAll = document.querySelector(".brands-menu__show-all");
-let textShowAll = document.querySelector(".text__show-all");
+let showAllBrands = document.querySelector(".brands-menu__show-all");
+let showAllViewTech = document.querySelector(".view-tech-menu__show-all");
 
-let elem1 =document.querySelector(".brand-1");
-let elem2 =document.querySelector(".brand-2");
-let elem3 =document.querySelector(".brand-3");
-let elem4 =document.querySelector(".brand-4");
-let elem5 =document.querySelector(".brand-5");
-let elem6 =document.querySelector(".brand-6");
-let elem7 =document.querySelector(".brand-7");
-let elem8 =document.querySelector(".brand-8");
-let elem9 =document.querySelector(".brand-9");
-let elem10 =document.querySelector(".brand-10");
-let elem11 =document.querySelector(".brand-11");
+let textShowAllBrands = document.querySelector(".brands-text__show-all");
+let textShowAllViewTech = document.querySelector(".view-tech-text__show-all");
 
+let elemBrand1 = document.querySelector(".brand-9");
+let elemBrand2 = document.querySelector(".brand-10");
+let elemBrand3 = document.querySelector(".brand-11");
 
-let statusMenuOpened = true;
-showAll.addEventListener("click", function (){
-    if (statusMenuOpened) {
-        elem9.style.display = "block";
-        elem10.style.display = "block";
-        elem11.style.display = "block";
-        textShowAll.innerHTML = "<p>Скрыть</p>";
-        statusMenuOpened = false;
+let elemViewTech1 = document.querySelector(".view-tech__case-4");
+
+let statusMenuOpenedBrand = true;
+let statusMenuOpenedViewTech = true;
+
+showAllBrands.addEventListener("click", function (){
+    if (statusMenuOpenedBrand) {
+      elemBrand1.style.display = "block";
+      elemBrand2.style.display = "block";
+      elemBrand3.style.display = "block";
+      textShowAllBrands.innerHTML = "<p>Скрыть</p>";
+      statusMenuOpenedBrand = false;
     } else {
-        elem9.style.display = "none";
-        elem10.style.display = "none";
-        elem11.style.display = "none";
-        textShowAll.innerHTML = "<p>Показать всё</p>";
-        statusMenuOpened = true;
+      elemBrand1.style.display = "none";
+      elemBrand2.style.display = "none";
+      elemBrand3.style.display = "none";
+      textShowAllBrands.innerHTML = "<p>Показать всё</p>";
+      statusMenuOpenedBrand = true;
     }
+});
+
+showAllViewTech.addEventListener("click", function (){
+  if (statusMenuOpenedViewTech) {
+    elemViewTech1.style.display = "block";
+    textShowAllViewTech.innerHTML = "<p>Скрыть</p>";
+    statusMenuOpenedViewTech = false;
+  } else {
+    elemViewTech1.style.display = "none";
+    textShowAllViewTech.innerHTML = "<p>Показать всё</p>";
+    statusMenuOpenedViewTech = true;
+  }
 });
 

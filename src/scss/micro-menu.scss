@@ -2,7 +2,6 @@
   display: flex;
   flex-flow: column wrap;
   background: $bg-color;
-  border-top: 1px solid #D9FFF5;
 
   @media (min-width: $screen-lg) {
     border-top: none;
@@ -14,6 +13,8 @@
   flex-flow: row wrap;
   justify-content: flex-start;
   align-items: center;
+  padding: 0 0 0 16px;
+  min-width: 1440px;
 }
 
 .micro-menu__elem2, .micro-menu__elem3, .micro-menu__elem4,
@@ -25,7 +26,6 @@
 .micro-menu__elem4, .micro-menu__elem5, .micro-menu__elem6,
 .micro-menu__elem7 {
   font-size: 16px;
-  padding: 0 0 0 0;
   text-align: center;
 
   @media (min-width: $screen-md) {
@@ -41,6 +41,7 @@
 .micro-menu__elem1 {
   @media (min-width: 320px) {
     border: 2px solid #B8FFEC;
+    border-radius: 6px;
   }
 
   @media (min-width: $screen-lg) {

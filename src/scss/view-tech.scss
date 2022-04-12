@@ -1,5 +1,5 @@
-.brands-menu__container {
-  min-height: 200px;
+.view-tech-menu__container {
+  min-height: 234px;
   min-width: 320px;
 
   @media (min-width: $screen-md) {
@@ -12,7 +12,7 @@
   }
 }
 
-.brands-menu__title {
+.view-tech-menu__title {
   position: relative;
   height: 80px;
   margin: 16px 0 0 0;
@@ -34,12 +34,12 @@
   }
 }
 
-.brands-menu__brands{
+.view-tech-menu__cases{
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   margin: 0;
-  padding: 16px 16px 0 16px;
+  padding: 16px 32px 0 16px;
   list-style: none;
 
   @media (min-width: $screen-md) {
@@ -47,23 +47,40 @@
   }
 }
 
-.brand-1, .brand-2, .brand-3,
-.brand-4, .brand-5, .brand-6,
-.brand-7, .brand-8, .brand-8,
-.brand-10, .brand-11 {
-  border: 0 solid #EAEAEA;
-  border-radius: 5%;
-  margin: 0 0 20px 0;
-  width: 240px;
+.view-tech__case-1, .view-tech__case-2, .view-tech__case-3,
+.view-tech__case-4 {
+  margin: 0 0 24px 0;
 
   @media (min-width: $screen-md) {
-      height: 72px;
-      background: white;
-      margin-right: 24px;
+    height: 72px;
+    margin-right: 24px;
   }
 
   @media (min-width: $screen-lg) {
     margin-right: 32px;
+  }
+
+  .view-tech__elem {
+    width: 240px;
+    background: white;
+    height: 160px;
+    border: 2px solid #EAEAEA;
+    border-radius: 5%;
+    margin: 0 10px 0 0;
+  }
+
+  p {
+    position: absolute;
+    left: 15px;
+  }
+
+  img {
+    position: absolute;
+    top: 110px;
+    left: 190px;
+    &:hover {
+      cursor: pointer;
+    }
   }
 
   &:hover {
@@ -71,26 +88,17 @@
   }
 }
 
-.brand-4, .brand-8,
-.brand-9, .brand-10, .brand-11{
+.view-tech__case-4{
   @media (min-width: $screen-md) {
     display: none;
   }
-}
 
-.brand-4, .brand-8{
-  @media (min-width: $screen-md) {
-    display: inline-block;
+  @media (min-width: $screen-lg) {
+    display: block;
   }
 }
 
-.brand-9, .brand-10, .brand-11 {
-  @media (min-width: $screen-md) {
-    display: none;
-  }
-}
-
-.brands-menu__show-all{
+.view-tech-menu__show-all{
   display: none;
   margin: 0 0 0 32px;
 
@@ -108,3 +116,5 @@
     margin: 0 0 0 8px;
   }
 }
+
+

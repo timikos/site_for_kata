@@ -1,0 +1,19 @@
+.down-info {
+  padding: 0 16px;
+}
+
+.down-info__link {
+  a {
+    display: flex;
+    align-content: center;
+    p {
+      display: inline;
+      font-size: 18px;
+      font-weight:bold;
+
+      img {
+        vertical-align: middle;
+      }
+    }
+  }
+}

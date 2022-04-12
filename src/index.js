@@ -31,6 +31,8 @@ import "./img/circle-buttons/checkstatus.svg";
 import "./img/helpers/divider.svg";
 import "./img/helpers/left-h.svg";
 import "./img/helpers/arrow-down.svg";
+import "./img/helpers/more.svg";
+import "./img/helpers/go.svg";
 
 // Img logo
 import "./img/logo/logo.svg";
