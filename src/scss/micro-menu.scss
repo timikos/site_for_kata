@@ -1,130 +1,32 @@
-.main__container {
+.micro-menu__container {
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: row nowrap;
   background: $bg-color;
-
-  @media (min-width: $screen-lg) {
-    border-top: none;
-  }
-}
-
-.main__micro-menu {
-  display: flex;
-  flex-flow: row wrap;
+  overflow: scroll;
   justify-content: flex-start;
   align-items: center;
   padding: 0 0 0 16px;
-  min-width: 1440px;
-}
 
-.micro-menu__elem2, .micro-menu__elem3, .micro-menu__elem4,
-.micro-menu__elem5, .micro-menu__elem6, .micro-menu__elem7 {
-  display: none;
 }
 
 .micro-menu__elem1, .micro-menu__elem2, .micro-menu__elem3,
 .micro-menu__elem4, .micro-menu__elem5, .micro-menu__elem6,
 .micro-menu__elem7 {
-  font-size: 16px;
-  text-align: center;
-
-  @media (min-width: $screen-md) {
-    display: inline-block;
-    margin: 0 0 6px 0;
-    padding: 0 10px;
-  }
-
-  p {
-    margin: 9px 21px;
-  }
-}
-.micro-menu__elem1 {
-  @media (min-width: 320px) {
-    border: 2px solid #B8FFEC;
-    border-radius: 6px;
-  }
-
-  @media (min-width: $screen-lg) {
-    border: none;
-  }
-}
-
-.micro-menu__elem5 {
-  @media (min-width: $screen-lg) {
-    border: 2px solid #B8FFEC;
-    border-radius: 6px;
-    background: white;
-  }
-}
-
-.main__content {
-  display:flex;
-  flex-direction: column;
-
-  @media (min-width: $screen-md) {
-    flex-direction: row;
-    justify-content: flex-start;
-  }
-}
-
-.main__info {
-  width: 288px;
-  margin-left: 16px;
-  margin-right: 0;
-  color: #1B1C21;
   font-size: 14px;
-  line-height: 18px;
-
-  @media (min-width: $screen-md) {
-    width: 312px;
-    line-height: 20px;
-    margin-left: 24px;
-  }
-
-  @media (min-width: $screen-lg) {
-    width: 490px;
-    height: 160px;
-    margin-left: 32px;
-  }
+  text-align: center;
+  min-width: 248px;
 
   p {
-    margin-bottom: 0;
+    margin: 9px 15px;
   }
 }
 
-.main__button-more-info {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  margin: 16px 8px;
-  color: #1B1C21;
-
-  @media (min-width: $screen-md) {
-    margin: 10px 9px;
-  }
-
-  @media (min-width: $screen-lg) {
-    margin: 14px 6px;
-  }
-
-  a {
-    padding-left: 10px;
-  }
+.micro-menu__elem1 {
+  border: 2px solid #B8FFEC;
+  border-radius: 6px;
 }
 
-.main__image {
-  @media (min-width: $screen-md) {
-    width: 360px;
-    margin-top: 8px;
-    margin-bottom: 8px;
-    margin-left: 22px;
-    border: 0 solid;
-    border-radius: 6px;
-  }
-
-  @media (min-width: $screen-lg) {
-    width: 530px;
-    margin-top: 0;
-  }
+.micro-menu--active {
+  border: 2px solid #B8FFEC;
+  border-radius: 6px;
 }
-

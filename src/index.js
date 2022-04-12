@@ -2,6 +2,7 @@ import './scss/style.scss';
 import './js/swiper.js';
 import './js/button-show-all.js';
 import './js/burger-menu--show.js';
+import './js/micro-menu--active.js';
 
 // Img brands
 import './img/brands/lenovo.svg';

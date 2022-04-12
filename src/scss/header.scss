@@ -3,6 +3,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 10px;
 }
 
 .header__name {
@@ -36,12 +37,14 @@
   }
 }
 
-.header__first_points{
+.header__first_points {
   .header__divider {
-    display: none;
+    display: block;
+    order: 3;
 
     @media (min-width: $screen-md) {
       display: block;
+      order: 1;
     }
 
     @media (min-width: $screen-lg) {
@@ -51,15 +54,24 @@
 }
 
 .header__elem1 {
+  @media (min-width: $screen-md) {
+    order: 1;
+  }
   @media (min-width: $screen-lg) {
     display: none;
+  }
+}
+
+.header__elem2 {
+  @media (min-width: $screen-md) {
+    order: 2;
   }
 }
 
 .header__elem1, .header__elem2, .header__elem3,
 .header__elem4, .header__elem5, .header__elem7,
 .header__elem8, .header__divider{
-  margin-left: 16px;
+  margin: 0 8px 0 8px;
 }
 
 .header__elem2, .header__divider {
@@ -68,7 +80,8 @@
   }
 }
 
-.header__elem3{
+.header__elem3 {
+
   @media (min-width: $screen-md) {
     display: block;
     margin-left: 16px;
@@ -102,7 +115,8 @@
 }
 
 .header__elem7, .header__elem8 {
-  @media (min-width: 768px) {
+
+  @media (min-width: $screen-md) {
     margin-left: 16px;
   }
 

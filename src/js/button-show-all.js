@@ -15,9 +15,9 @@ let statusMenuOpenedViewTech = true;
 
 showAllBrands.addEventListener("click", function (){
     if (statusMenuOpenedBrand) {
-      elemBrand1.style.display = "block";
-      elemBrand2.style.display = "block";
-      elemBrand3.style.display = "block";
+      elemBrand1.style.display = "inline";
+      elemBrand2.style.display = "inline";
+      elemBrand3.style.display = "inline";
       textShowAllBrands.innerHTML = "<p>Скрыть</p>";
       statusMenuOpenedBrand = false;
     } else {
