@@ -1,12 +1,14 @@
 .burger__container {
-  z-index: 5;
+  z-index: 100;
   top:0;
   left: 0;
   background: $color-blocks;
-  position:absolute;
+  overflow-y: hidden;
+  position:fixed;
   display:none;
-  padding: 0 24px;
   width: 320px;
+  height: 100%;
+  padding: 0 24px;
   box-shadow: 23px 0 25px 0 rgba(34, 60, 80, 0.28);
 
   @media (min-width: $screen-lg) {
