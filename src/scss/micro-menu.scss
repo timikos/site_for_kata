@@ -1,32 +1,42 @@
 .micro-menu__container {
   display: flex;
   flex-flow: row nowrap;
-  background: $bg-color;
+  background: $color-background;
   overflow: scroll;
-  justify-content: flex-start;
   align-items: center;
   padding: 0 0 0 16px;
+  width: 1439px;
 
-}
-
-.micro-menu__elem1, .micro-menu__elem2, .micro-menu__elem3,
-.micro-menu__elem4, .micro-menu__elem5, .micro-menu__elem6,
-.micro-menu__elem7 {
-  font-size: 14px;
-  text-align: center;
-  min-width: 248px;
-
-  p {
-    margin: 9px 15px;
+  @media (min-width: $screen-lg) {
+    flex-wrap: wrap;
+    width: 100%;
   }
 }
 
-.micro-menu__elem1 {
-  border: 2px solid #B8FFEC;
-  border-radius: 6px;
+.micro-menu__container * {
+  display: flex;
+  flex-flow:nowrap;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  height: 40px;
+  width: 246px;
+  padding: 0;
+
+  @media (min-width: $screen-md) {
+    width: 248px;
+  }
+
+  @media (min-width: $screen-lg) {
+    width: 233px;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .micro-menu--active {
-  border: 2px solid #B8FFEC;
+  border: 2px solid $color-second;
   border-radius: 6px;
 }

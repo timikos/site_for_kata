@@ -1,0 +1,85 @@
+.modal {
+  display: none;
+  position: absolute;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(255,255,255,0.9);
+}
+
+.modal__content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: $color-blocks;
+  float: right;
+  padding: 20px;
+  box-shadow: -2px 3px 10px 2px rgba(34, 60, 80, 0.2);
+  width: 320px;
+  height: 100%;
+
+  @media (min-width: $screen-md) {
+    width: 440px;
+  }
+}
+
+.modal__text-container {
+  display: flex;
+}
+
+.left-h__modal {
+  position: relative;
+  left: -20px;
+  top: 0;
+}
+
+.modal__text {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.modal__info {
+  font-size: 14px;
+}
+
+.modal__area-input {
+  border: 1px solid $color-area-text;
+  border-radius: 6px;
+  margin: 0 0 20px 0;
+  padding: 0 0 0 20px;
+
+  &::placeholder {
+    font-family: $font-main;
+  }
+}
+
+.area-input__size {
+  height: 48px;
+  width: 288px;
+
+  @media (min-width: $screen-md) {
+    width: 376px;
+  }
+}
+
+.area-textarea__size {
+  width: 288px;
+  padding: 20px 0 0 20px;
+
+  @media (min-width: $screen-md) {
+    width: 376px;
+  }
+}
+
+.btn__back {
+  @media (min-width: $screen-md) {
+    position: absolute;
+    left: -70px;
+  }
+}
+
+

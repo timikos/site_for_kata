@@ -18,8 +18,8 @@
   margin: 16px 0 0 0;
   padding: 0 0 0 20px;
   background: white;
-  color:$text-footer;
-  border-top: 1px solid #B8FFEC;
+  color:$color-active;
+  border-top: 1px solid $color-second;
 
   @media (min-width: $screen-md) {
     min-width: 700px;
@@ -55,14 +55,14 @@
 .brand-4, .brand-5, .brand-6,
 .brand-7, .brand-8, .brand-9,
 .brand-10, .brand-11 {
-  border: 0 solid #EAEAEA;
+  border: 0 solid $color-area-text;
   border-radius: 5%;
   margin: 0 0 20px 0;
   width: 240px;
 
   @media (min-width: $screen-md) {
     height: 72px;
-    background: white;
+    background: $color-background;
     margin-right: 24px;
   }
 

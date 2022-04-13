@@ -17,9 +17,9 @@
   height: 80px;
   margin: 16px 0 0 0;
   padding: 0 0 0 20px;
-  background: white;
-  color:$text-footer;
-  border-top: 1px solid #B8FFEC;
+  background: $color-blocks;
+  color:$color-active;
+  border-top: 1px solid $color-second;
 
   @media (min-width: $screen-md) {
     min-width: 700px;
@@ -74,9 +74,9 @@
 
   .view-tech__elem {
     width: 224px;
-    background: white;
+    background: $color-blocks;
     height: 160px;
-    border: 2px solid #EAEAEA;
+    border: 2px solid $color-area-text;
     border-radius: 5%;
     margin: 0 10px 0 0;
   }

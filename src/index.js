@@ -3,6 +3,8 @@ import './js/swiper.js';
 import './js/button-show-all.js';
 import './js/burger-menu--show.js';
 import './js/micro-menu--active.js';
+import './js/modal-windows.js';
+import './js/content-show-text.js';
 
 // Img brands
 import './img/brands/lenovo.svg';
@@ -34,6 +36,8 @@ import "./img/helpers/left-h.svg";
 import "./img/helpers/arrow-down.svg";
 import "./img/helpers/more.svg";
 import "./img/helpers/go.svg";
+import "./img/helpers/button.svg";
+import "./img/helpers/dropdown.svg";
 
 // Img logo
 import "./img/logo/logo.svg";

@@ -1,6 +1,7 @@
-.main__container {
+.content__container {
   display:flex;
   flex-direction: column;
+  margin: 0 0 40px 0;
 
   @media (min-width: $screen-md) {
     flex-direction: row;
@@ -8,10 +9,9 @@
   }
 }
 
-.main__info {
+.content__info {
   width: 288px;
-  margin-left: 16px;
-  margin-right: 0;
+  margin: 0 0 0 16px;
   color: #1B1C21;
   font-size: 14px;
   line-height: 18px;
@@ -33,12 +33,12 @@
   }
 }
 
-.main__button-more-info {
+.content__button-more-info {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   margin: 16px 8px;
-  color: #1B1C21;
+  color: black;
 
   @media (min-width: $screen-md) {
     margin: 10px 9px;
@@ -52,8 +52,19 @@
     padding-left: 10px;
   }
 }
+.info__p2 {
+  @media (min-width: $screen-md) {
+    display: inline-block;
+  }
+}
+.info__p3, {
+  @media (min-width: $screen-md) {
+    display: none;
+  }
+  display: none;
+}
 
-.main__image {
+.content__image {
   @media (min-width: $screen-md) {
     width: 360px;
     margin-top: 8px;

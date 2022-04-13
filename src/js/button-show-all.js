@@ -27,6 +27,7 @@ showAllBrands.addEventListener("click", function (){
       textShowAllBrands.innerHTML = "<p>Показать всё</p>";
       statusMenuOpenedBrand = true;
     }
+
 });
 
 showAllViewTech.addEventListener("click", function (){

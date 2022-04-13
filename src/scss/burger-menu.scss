@@ -2,7 +2,7 @@
   z-index: 5;
   top:0;
   left: 0;
-  background: white;
+  background: $color-blocks;
   position:absolute;
   display:none;
   padding: 0 24px;
@@ -20,7 +20,7 @@
   display:block;
 }
 
-.burger-menu__top-menu {
+.burger-menu__header {
   ul {
     height: 100px;
     display: flex;
@@ -65,7 +65,7 @@
 
         &:hover {
           transition: 1s;
-          color: $active_link;
+          color: $color-active;
           transform: scale(1.1);
         }
       }
@@ -80,7 +80,7 @@
 }
 
 .menu__list_active {
-    color: $active_link;
+    color: $color-active;
 }
 
 .burger-menu__buttons {
@@ -100,6 +100,7 @@
 }
 
 .lang-change {
+  margin: 0 0 40px 0;
   ul{
 
     li{

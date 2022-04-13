@@ -115,17 +115,18 @@
 }
 
 .header__elem7, .header__elem8 {
+  a {
+    @media (min-width: $screen-md) {
 
-  @media (min-width: $screen-md) {
-    margin-left: 16px;
-  }
+    }
 
-  @media (min-width: $screen-lg) {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-right: 32px;
-  }
+    @media (min-width: $screen-lg) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-right: 32px;
+    }
+}
 
   p {
     display: none;

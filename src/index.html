@@ -9,11 +9,48 @@
 </head>
 <body>
   <div class="container">
+    <div id="modal__call" class="modal">
+      <div class="modal__content">
+        <a class="close" href="">
+          <img src="img/circle-buttons/back.svg" class="btn__back" alt="">
+        </a>
+        <div>
+          <div class="modal__text-container">
+            <img src="img/helpers/left-h.svg" alt="" class="left-h__modal">
+            <p class="modal__text">Обратная связь</p>
+          </div>
+            <input type="text" placeholder="Имя" class="modal__area-input area-input__size">
+            <input type="text" placeholder="Телефон" class="modal__area-input area-input__size">
+            <input type="text" placeholder="Электронная почта" class="modal__area-input area-input__size">
+            <textarea placeholder="Сообщение" class="modal__area-input area-textarea__size" rows="5" cols="40" style="resize: none;"></textarea>
+            <p class="modal__info">Нажимая "отправить", вы даёте согласие на <span class="text__color">обработку
+            персональных данных</span> и соглашаетесь с нашей <span class="text__color">политикой конфиденциальности</span>.</p>
+          <div class="btn__buy" style="float:right;"><p>ОТПРАВИТЬ</p><img src="./img/helpers/dropdown.svg" alt=""></div>
+        </div>
+      </div>
+    </div>
+    <div id="modal__feedback" class="modal">
+      <div class="modal__content">
+        <a class="close" href="">
+          <img src="img/circle-buttons/back.svg" class="btn__back" alt="">
+        </a>
+        <div>
+          <div class="modal__text-container">
+            <img src="img/helpers/left-h.svg" alt="" class="left-h__modal">
+            <p class="modal__text">Заказать звонок</p>
+          </div>
+          <input type="text" placeholder="Телефон" class="modal__area-input area-input__size">
+          <p class="modal__info">Нажимая "отправить", вы даёте согласие на <span class="text__color">обработку
+            персональных данных</span> и соглашаетесь с нашей <span class="text__color">политикой конфиденциальности</span>.</p>
+          <div class="btn__buy" style="float:right;"><p>ОТПРАВИТЬ</p><img src="./img/helpers/dropdown.svg" alt=""></div>
+        </div>
+      </div>
+    </div>
     <div class="burger__container">
-      <nav class="burger-menu__top-menu">
+      <nav class="burger-menu__header">
         <ul>
-          <li><a class="burger-menu__btn-back" href=""><img src="img/circle-buttons/back.svg" class="burger-menu__btn-back" alt=""></a></li>
-          <li><a href=""><img src="img/logo/logo.svg" alt=""></a></li>
+          <li><a href=""><img src="img/circle-buttons/back.svg" class="burger-menu__btn-back" alt=""></a></li>
+          <li><a href="#"><img src="img/logo/logo.svg" alt=""></a></li>
           <li><a href=""><img src="img/circle-buttons/search-burger.svg" alt=""></a></li>
         </ul>
       </nav>
@@ -24,7 +61,7 @@
             <a href="" class="menu__list_active">Ремонт техники</a>
           </li>
           <li>
-            <a href="">Услуги и сервисы</a>
+            <a href="#repair__tech">Услуги и сервисы</a>
           </li>
           <li>
             <a href="">Корпоротивным клиентам</a>
@@ -48,9 +85,9 @@
       </nav>
       <div class="burger-menu__buttons">
         <ul>
-          <li><img src="img/circle-buttons/call.svg" alt=""></li>
-          <li><img src="img/circle-buttons/chat.svg" alt=""></li>
-          <li><img src="img/circle-buttons/profile.svg" alt=""></li>
+          <li><a href=""><img src="img/circle-buttons/call.svg" alt=""></a></li>
+          <li><a href=""><img src="img/circle-buttons/chat.svg" alt=""></a></li>
+          <li><a href=""><img src="img/circle-buttons/profile.svg" alt=""></a></li>
         </ul>
       </div>
       <div class="burger-menu__info">
@@ -71,7 +108,7 @@
         </ul>
       </div>
     </div>
-    <div class="main_content">
+    <div class="main-content">
     <header>
       <nav class="header__inner">
         <div class="header__first_points">
@@ -92,8 +129,8 @@
           </div>
         </div>
         <div class="header__second-points">
-          <div class="header__elem3">
-            <a class="" href="#">
+          <div class="header__elem3" id="call">
+            <a href="">
               <img src="img/circle-buttons/call.svg" alt="Иконка меню">
             </a>
           </div>
@@ -107,13 +144,22 @@
               <img src="img/circle-buttons/profile.svg" alt="Иконка меню">
             </a>
           </div>
+          <div class="header__divider">
+            <a class="" href="#">
+              <img src="img/helpers/divider.svg" alt="Иконка меню">
+            </a>
+          </div>
           <div class="header__elem7">
-            <p>Оставить заявку</p>
-            <img src="img/circle-buttons/repair.svg" alt="Иконка меню">
+            <a class="" href="#">
+              <p>Оставить заявку</p>
+              <img src="img/circle-buttons/repair.svg" alt="Иконка меню">
+            </a>
           </div>
           <div class="header__elem8">
-            <p>Статус ремонта</p>
-            <img src="img/circle-buttons/checkstatus.svg" alt="Иконка меню">
+            <a class="" href="#">
+              <p>Статус ремонта</p>
+              <img src="img/circle-buttons/checkstatus.svg" alt="Иконка меню">
+            </a>
           </div>
         </div>
       </nav>
@@ -125,49 +171,45 @@
           <h1>Услуги и сервисы</h1>
         </div>
       </div>
-
-  </header>
+    </header>
   <main>
     <section>
       <ul class="micro-menu__container">
-        <li class="micro-menu__elem5">
-          <p>Ремонтируемые бренды</p>
-        </li>
-        <li class="micro-menu__elem1">
+        <li class="micro-menu--active">
           <p>Ремонтируемые устройства</p>
         </li>
-        <li class="micro-menu__elem2">
+        <li>
           <p>Дополнительные услуги</p>
         </li>
-        <li class="micro-menu__elem3">
+        <li>
           <p>Цены на услуги</p>
         </li>
-        <li class="micro-menu__elem6">
+        <li>
           <p>Адреса сервисных центров</p>
         </li>
-        <li class="micro-menu__elem4">
+        <li>
           <p>Специальные цены</p>
         </li>
-        <li class="micro-menu__elem7">
+        <li>
           <p>Отзывы</p>
         </li>
       </ul>
     </section>
-    <section class="main__container">
-      <div class="main__info">
+    <section class="content__container">
+      <div class="content__info">
         <p class="info__p1">Мы являемся авторизованным сервисным центром по ремонту техники Dell.
           Только у нас вы можете отремонтировать свой ноутбук Dell с
-          официальной гарантией производителя.</p>
-        <p class="info__p2">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера</p>
-        <p class="info__p3">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера,
-          что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются
-          по рекомендациям и, в свою очередь, советуют нас родным и близким.</p>
-        <div class="main__button-more-info">
+          официальной гарантией производителя.
+          <span class="info__p2">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера</span>
+          <span class="info__p3">, что подтверждает большое количество постоянных клиентов.
+            Мы гордимся тем, что к нам обращаются
+          по рекомендациям и, в свою очередь, советуют нас родным и близким.</span></p>
+        <div class="content__button-more-info">
           <img src="img/helpers/arrow-down.svg" alt="">
-          <a><b>Читать далее</b></a>
+          <a href=""><b>Читать далее</b></a>
         </div>
       </div>
-      <div class="main__image">
+      <div class="content__image">
         <img src="img/stand.png" class="main__image" alt="">
       </div>
     </section>
@@ -199,7 +241,7 @@
     </section>
     <section class="view-tech-menu__container">
       <div class="view-tech-menu__title">
-        <p class="">РЕМОНТ РАЗЛИЧНЫХ ВИДОВ ТЕХНИКИ</p>
+        <p class="" id="repair__tech">РЕМОНТ РАЗЛИЧНЫХ ВИДОВ ТЕХНИКИ</p>
       </div>
       <div class="view-tech-menu__cases swiper" data-mobile="false">
         <div class="swiper-wrapper view-tech__flex">
@@ -216,71 +258,115 @@
         <p class="view-tech-text__show-all">Показать все</p>
       </div>
     </section>
+    <div class="price-menu__title">
+      <p class="">ЦЕНЫ НА УСЛУГИ</p>
+    </div>
     <section class="price-menu__container">
-      <div class="price-menu__title">
-        <p class="">ЦЕНЫ НА УСЛУГИ</p>
-      </div>
       <ul class="price-menu__cases swiper" data-mobile="false">
         <div class="swiper-wrapper">
           <li class="price__case-1 swiper-slide">
             <div class="price__elem">
-              <p class="name_p">Рыночные услуги</p>
-              <p class="text_p">Тестирование с выдачей технического заключения</p>
-              <p class="name_p">Цена</p>
-              <p class="text_p">Бесплатно</p>
-              <p class="name_p">Срок</p>
-              <p class="text_p">30-120 мин</p>
-              <input type="button" class="btn__buy" value="Заказать">
+              <p class="price__name">Рыночные услуги</p>
+              <p class="price__text">Тестирование с выдачей технического заключения</p>
+              <p class="price__name">Цена</p>
+              <p class="price__text">Бесплатно</p>
+              <p class="price__name">Срок</p>
+              <p class="price__text">30-120 мин</p>
+              <div class="btn__buy btn__position_price"><p>ЗАКАЗАТЬ</p><img src="./img/helpers/dropdown.svg" alt=""></div>
             </div>
           </li>
           <li class="price__case-2 swiper-slide">
             <div class="price__elem">
-            <p class="name_p">Рыночные услуги</p>
-            <p class="text_p">Диагностика</p>
-            <p class="name_p">Цена</p>
-            <p class="text_p">1 000 р</p>
-            <p class="name_p">Срок</p>
-            <p class="text_p">30 мин</p>
-              <input type="button" class="btn__buy" value="Заказать">
+              <p class="price__name">Рыночные услуги</p>
+              <p class="price__text">Диагностика</p>
+              <p class="price__name">Цена</p>
+              <p class="price__text">1 000 р</p>
+              <p class="price__name">Срок</p>
+              <p class="price__text">30 мин</p>
+              <div class="btn__buy btn__position_price"><p>ЗАКАЗАТЬ</p><img src="./img/helpers/dropdown.svg" alt=""></div>
             </div>
           </li>
           <li class="price__case-3 swiper-slide">
             <div class="price__elem">
-              <p class="name_p">Рыночные услуги</p>
-              <p class="text_p">Замена дисплея</p>
-              <p class="name_p">Цена</p>
-              <p class="text_p">1 000 р</p>
-              <p class="name_p">Срок</p>
-              <p class="text_p">30-120 мин</p>
-              <input type="button" class="btn__buy" value="Заказать">
+              <p class="price__name">Рыночные услуги</p>
+              <p class="price__text">Замена дисплея</p>
+              <p class="price__name">Цена</p>
+              <p class="price__text">1 000 р</p>
+              <p class="price__name">Срок</p>
+              <p class="price__text">30-120 мин</p>
+              <div class="btn__buy btn__position_price"><p>ЗАКАЗАТЬ</p><img src="./img/helpers/dropdown.svg" alt=""></div>
             </div>
           </li>
           <li class="price__case-4 swiper-slide">
             <div class="price__elem">
-              <p class="name_p">Рыночные услуги</p>
-              <p class="text_p">Замена полифонического динамика</p>
-              <p class="name_p">Цена</p>
-              <p class="text_p">1 000 р</p>
-              <p class="name_p">Срок</p>
-              <p class="text_p">30-120 мин</p>
-              <input type="button" class="btn__buy" value="Заказать">
+              <p class="price__name">Рыночные услуги</p>
+              <p class="price__text">Замена полифонического динамика</p>
+              <p class="price__name">Цена</p>
+              <p class="price__text">1 000 р</p>
+              <p class="price__name">Срок</p>
+              <p class="price__text">30-120 мин</p>
+              <div class="btn__buy btn__position_price"><p>ЗАКАЗАТЬ</p><img src="./img/helpers/dropdown.svg" alt=""></div>
             </div>
           </li>
           <li class="price__case-5 swiper-slide">
             <div class="price__elem">
-              <p class="name_p">Рыночные услуги</p>
-              <p class="text_p">Замена программного обеспечения</p>
-              <p class="name_p">Цена</p>
-              <p class="text_p">1 000 р</p>
-              <p class="name_p">Срок</p>
-              <p class="text_p">30-120 мин</p>
-              <input type="button" class="btn__buy" value="Заказать">
+              <p class="price__name">Рыночные услуги</p>
+              <p class="price__text">Замена программного обеспечения</p>
+              <p class="price__name">Цена</p>
+              <p class="price__text">1 000 р</p>
+              <p class="price__name">Срок</p>
+              <p class="price__text">30-120 мин</p>
+              <div class="btn__buy btn__position_price"><p>ЗАКАЗАТЬ</p><img src="./img/helpers/dropdown.svg" alt=""></div>
             </div>
           </li>
         </div>
         <div class="swiper-pagination">
         </div>
       </ul>
+    </section>
+    <section class="price-menu__table">
+      <table class="price__table">
+        <thead>
+          <tr class="price_menu__head">
+            <td class="price-menu__nameplate table__font">Ремонтные услуги</td>
+            <td class="price-menu__nameplate table__font">Цена</td>
+            <td class="price-menu__nameplate table__font">Срок</td>
+            <td></td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="table__row">
+            <td class="table__font">Диагностика</td>
+            <td>Бесплатно</td>
+            <td>30 мин</td>
+            <td><div class="btn__buy"><p>ЗАКАЗАТЬ</p><img src="./img/helpers/dropdown.svg" alt=""></div></td>
+          </tr>
+          <tr class="table__row">
+            <td class="table__font">Замена дисплея</td>
+            <td>1000 Р</td>
+            <td>30-120 мин</td>
+            <td><div class="btn__buy"><p>ЗАКАЗАТЬ</p><img src="./img/helpers/dropdown.svg" alt=""></div></td>
+          </tr>
+          <tr class="table__row">
+            <td class="table__font">Замена полифонического динамика</td>
+            <td>1000 Р</td>
+            <td>30-120 мин</td>
+            <td><div class="btn__buy"><p>ЗАКАЗАТЬ</p><img src="./img/helpers/dropdown.svg" alt=""></div></td>
+          </tr>
+          <tr class="table__row">
+            <td class="table__font">Тестирование с выдачей технического заключения</td>
+            <td>1000 Р</td>
+            <td>30-120 мин</td>
+            <td><div class="btn__buy"><p>ЗАКАЗАТЬ</p><img src="./img/helpers/dropdown.svg" alt=""></div></td>
+          </tr>
+          <tr class="table__row">
+            <td class="table__font">Замена программного обеспечения</td>
+            <td>1000 Р</td>
+            <td>30-120 мин</td>
+            <td><div class="btn__buy"><p>ЗАКАЗАТЬ</p><img src="./img/helpers/dropdown.svg" alt=""></div></td>
+          </tr>
+        </tbody>
+      </table>
     </section>
     <section class="down-info">
       <p>Все цены указаны с учетом НДС. Стоимость ремонта указана на единичную услугу.
@@ -290,7 +376,7 @@
       </div>
     </section>
   </main>
-  <footer>
+  <footer class="footer__text">
     <p>© 2019 CPS <br>
       Разработано командой Apesong
     </p>

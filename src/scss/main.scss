@@ -15,7 +15,6 @@ a {
 }
 
 .container {
-
   @media (min-width: $screen-lg) {
     display: flex;
     flex-direction: row;
@@ -23,8 +22,40 @@ a {
   }
 }
 
-.main__content {
-  @media (min-width: $screen-lg) {
-
+.main-content {
+  @media (min-width: $screen-lg) and (max-width: 2560px) {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
+}
+
+.btn__position_price {
+  position: absolute;
+  top: 160px;
+  left: 130px;
+}
+
+.btn__buy {
+  width: 119px;
+  height: 32px;
+  background: url("../img/helpers/button.svg");
+  color: $color-blocks;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 12px;
+  @media (min-width: $screen-md) {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.text__color {
+  color: $color-primary;
 }

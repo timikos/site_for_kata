@@ -3,8 +3,7 @@
   min-width: 320px;
 
   @media (min-width: $screen-md) {
-    min-height: 322px;
-    min-width: 768px;
+    display: none;
   }
 
   @media (min-width: $screen-lg) {
@@ -17,9 +16,9 @@
   height: 56px;
   margin: 16px 0 0 0;
   padding: 0 0 0 20px;
-  background: white;
-  color:$text-footer;
-  border-top: 1px solid #B8FFEC;
+  background: $color-blocks;
+  color:$color-active;
+  border-top: 1px solid $color-second;
 
   @media (min-width: $screen-md) {
     min-width: 700px;
@@ -46,31 +45,20 @@
     padding-top: 24px;
   }
 
-  .name_p {
-
+  .price__name {
     line-height:0;
-    color: #7E7E82;
+    color: $color-active;
     position: relative;
     left: 10px;
   }
 
-  .text_p {
+  .price__text {
     width: 240px;
     height: 30px;
     padding: 0 0 10px 0;
     position: relative;
     left: 10px;
     top: -5px;
-  }
-
-  .btn__buy {
-    border: 2px solid black;
-    border-radius: 15%;
-    position: absolute;
-    top: 160px;
-    left: 180px;
-    width: 50px;
-
   }
 }
 
@@ -89,16 +77,56 @@
 
   .price__elem {
     width: 260px;
-    background: white;
+    background: $color-blocks;
     height: 200px;
-    border: 2px solid #EAEAEA;
+    border: 2px solid $color-area-text;
     border-radius: 5%;
     margin: 0 32px 0 0;
-
   }
 
   &:hover {
     cursor: pointer;
+  }
+}
+
+.price-menu__table {
+  display: none;
+
+  @media (min-width: $screen-md) {
+    display: block;
+    text-align: left;
+    margin: 12px 24px 0 24px;
+    border-radius: 6px;
+    border: 0 solid;
+    padding: 0 20px;
+    background: $color-blocks;
+  }
+}
+
+.price_menu__head {
+  background: $color-background;
+  height: 64px;
+}
+
+.price__table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.price-menu__nameplate {
+  color: $color-active;
+}
+
+.table__font {
+  font-weight: 100;
+}
+
+.table__row {
+  height: 64px;
+  border-bottom: 1px solid $color-area-text;
+
+  &:nth-child(5) {
+    border: none;
   }
 }
 
