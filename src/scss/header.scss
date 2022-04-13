@@ -81,7 +81,6 @@
 }
 
 .header__elem3 {
-
   @media (min-width: $screen-md) {
     display: block;
     margin-left: 16px;
@@ -126,7 +125,7 @@
       align-items: center;
       margin-right: 32px;
     }
-}
+  }
 
   p {
     display: none;
@@ -136,26 +135,6 @@
       letter-spacing: -0.2px;
       padding-right: 8px;
     }
-  }
-}
-
-.info__p2 {
-  display: none;
-
-  @media (min-width: $screen-md) {
-    display: block;
-  }
-
-  @media (min-width: $screen-lg) {
-    display: none;
-  }
-}
-
-.info__p3 {
-  display: none;
-
-  @media (min-width: $screen-lg) {
-    display: block;
   }
 }
 

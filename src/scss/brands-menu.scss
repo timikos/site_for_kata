@@ -1,15 +1,5 @@
 .brands-menu__container {
-  min-height: 200px;
-  min-width: 320px;
 
-  @media (min-width: $screen-md) {
-    min-height: 322px;
-    min-width: 768px;
-  }
-
-  @media (min-width: $screen-lg) {
-    max-width: $screen-lg;
-  }
 }
 
 .brands-menu__title {
@@ -41,6 +31,7 @@
   margin: 0 0 0 0;
   padding: 16px 0 0 16px;
   list-style: none;
+  width: 100%;
 
   @media (min-width: $screen-md) {
     padding-top: 24px;

@@ -1,19 +1,20 @@
 let info2 = document.querySelector(".info__p2");
-let info3 = document.querySelector(".info__p3");
 let btnShowText = document.querySelector(".content__button-more-info");
 
 let statusMenuOpenedText = true;
 
-btnShowText.addEventListener("click", function (){
+btnShowText.addEventListener("click", function (evt){
   if (statusMenuOpenedText) {
-    info2.style.display = "block";
-    info3.style.display = "inline";
-    btnShowText.innerHTML = "";
+    evt.preventDefault();
+    info2.classList.add("info__show");
+    btnShowText.innerHTML = "<img src=\"img/helpers/arrow-up.svg\" alt=\"\">\n" +
+      "          <a href=\"\"><b>Скрыть</b></a>";
     statusMenuOpenedText = false;
   } else {
-    info2.style.display = "none";
-    info3.style.display = "none";
+    evt.preventDefault();
+    info2.classList.remove("info__show");
+    btnShowText.innerHTML = "<img src=\"img/helpers/arrow-down.svg\" alt=\"\">\n" +
+      "          <a href=\"\"><b>Читать далее</b></a>";
     statusMenuOpenedText = true;
   }
-
 });

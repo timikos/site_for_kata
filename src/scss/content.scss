@@ -52,16 +52,13 @@
     padding-left: 10px;
   }
 }
+
 .info__p2 {
-  @media (min-width: $screen-md) {
-    display: inline-block;
-  }
-}
-.info__p3, {
-  @media (min-width: $screen-md) {
-    display: none;
-  }
   display: none;
+}
+
+.info__show {
+  display: block;
 }
 
 .content__image {
